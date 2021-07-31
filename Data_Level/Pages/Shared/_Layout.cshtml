@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Data & Level</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="~/images/papaq.png" rel="icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- lib CSS Files -->
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/lib/icofont/icofont.min.css" rel="stylesheet">
+    <link href="~/lib/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="~/lib/venobox/venobox.css" rel="stylesheet">
+    <link href="~/lib/owl.carousel/~/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="~/css/style.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+   
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+    </environment>
+    <!-- =======================================================
+    * Template Name: Lumia - v2.2.0
+    * Template URL: https://bootstrapmade.com/lumia-bootstrap-business-template/
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
+</head>
+
+<body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center">
+        <div class="container d-flex align-items-center">
+
+            <div class="logo mr-auto">
+                <a href="https://datalevel.pro/"><img src="~/images/papaq.png" alt="" class="forlogo"></a>
+                <h2 class="forlogo"><a href="https://datalevel.pro/">Data & Level</a></h2>
+                <p>Virtual Data Akademiyasi</p>
+                <!-- Uncomment below if you prefer to use an image logo -->
+            </div>
+            <nav class="nav-menu d-none d-lg-block">
+                <ul>
+                    <li class="active"><a asp-page="/Index">Əsas</a></li>
+                    <li class="drop-down">
+                        <a href="">Kurslar</a>
+                        <ul>
+                            <li><a asp-page="/Excel">Excel + Power BI</a></li>
+                            <li><a asp-page="/SQL">MS SQL</a></li>
+                            <li><a asp-page="/Python">Python</a></li>
+                            <!--
+                                 <li class="drop-down">
+                                <a href="#">Deep Drop Dow</a>
+                                <ul>
+                                    <li><a href="#">Deep Drop Down 1</a></li>
+                                    <li><a href="#">Deep Drop Down 2</a></li>
+                                    <li><a href="#">Deep Drop Down 3</a></li>
+                                    <li><a href="#">Deep Drop Down 4</a></li>
+                                    <li><a href="#">Deep Drop Down 5</a></li>
+                                </ul>
+                            </li>
+                            -->
+                        </ul>
+                    </li>
+                    <li><a asp-page="/Zoom">Zoom-qaydalar</a></li>
+                    <li><a asp-page="/Exams">İmtahanlar</a></li>
+                    <li><a asp-page="/Contact">Əlaqə</a></li>
+
+                </ul>
+            </nav><!-- .nav-menu -->
+        </div>
+    </header><!-- End Header -->
+    @RenderBody()
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="container-fluid">
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h3>Data & Level</h3>
+                        <p>
+                            AF Business House <br>
+                            Bakı<br>
+                            Azərbaycan <br><br>
+                            <strong>Tel:</strong> +99450 722 18 26<br>
+                            <strong>Email:</strong> info@datalevel.pro<br>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 footer-links">
+                        <h4>Faydalı linklər</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a asp-page="/Index">Əsas</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a asp-page="/About">Haqqımızda</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a asp-page="/Contact">Əlaqə</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Daxili qaydalar</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a asp-page="/Privacy">Məxfilik siyasəti</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Kurslar və qaydalar</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a asp-page="/Zoom">Zoom-qaydalar</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a asp-page="/Exams">İmtahanlar</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a asp-page="/Excel">Excel + Power BI</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a asp-page="/SQL">MS SQL</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a asp-page="/Python">Python</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-newsletter">
+                        <h4>Sosial şəbəkədə bizi izləyin</h4>
+                        <div class="social-links pt-3 pt-md-0">
+                            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="mr-md-auto text-center text-md-left">
+                <div class="copyright">
+                    &copy; Copyright <strong><span>/Data & Level/</span></strong> Bütün hüquqlar qorunur
+                </div>
+                <div class="credits">
+                    <!-- All the links in the footer should remain intact. -->
+                    <!-- You can delete the links only if you purchased the pro version. -->
+                    <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                    <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/lumia-bootstrap-business-template/ -->
+                     <p>App-Progress Virtual Studio</p>
+                </div>
+            </div>
+              <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>      
+        </div>        
+    </footer><!-- End Footer -->
+
+    <!-- lib JS Files -->
+    <script src="~/lib/jquery/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/jquery.easing/jquery.easing.min.js"></script>
+    <script src="~/lib/counterup/counterup.min.js"></script>
+    <script src="~/lib/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="~/lib/owl.carousel/owl.carousel.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="~/js/main.js"></script>
+
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
+        </script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+    </environment>
+
+    @RenderSection("Script", required: false)
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+﻿@page
+@model Data_Level.Pages.RegisterModel
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+<section class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h3 style="margin-top:28px">Kursa Qeydiyyat</h3>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-3">
+
+    </div>
+    <div class="col-lg-6 col-md-6">
+        <div class="register-form">
+            <form class="form" method="post">
+                <div asp-validation-summary="All"></div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label asp-for="RegisterForm.FullName" class="col-md-3 right">Ad/Soyad:</label>
+                            <div class="col-md-9">
+                                <input asp-for="RegisterForm.FullName" class="regform" />
+                                <span asp-validation-for="RegisterForm.FullName"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label asp-for="RegisterForm.Email" class="col-md-3 right">Email:</label>
+                            <div class="col-md-9">
+                                <input asp-for="RegisterForm.Email" class="regform" />
+                                <span asp-validation-for="RegisterForm.Email"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label asp-for="RegisterForm.Phone" class="col-md-3 right">Telefon:</label>
+                            <div class="col-md-9">
+                                <input asp-for="RegisterForm.Phone" rows="6" class="regform" />
+                                <span asp-validation-for="RegisterForm.Phone"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label asp-for="RegisterForm.Course" class="col-md-3 right">Kursu seçin:</label>
+                            <div class="col-md-9">
+                                <select name="mycourse" asp-for="RegisterForm.Course">
+                                    <option value="Excel + Power BI">Excel + Power BI</option>
+                                    <option value="MS SQL">MS SQL</option>
+                                    <option value="Python">Python</option>
+                                </select>
+                                <span asp-validation-for="RegisterForm.Course"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <button class="regbtn" type="submit">Göndər</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-3">
+        <img class="zoomview" src="~/images/exam02.jpg" />
+    </div> 
+
+</section>
+

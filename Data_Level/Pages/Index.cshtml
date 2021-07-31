@@ -1,0 +1,378 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<!-- ======= Carousel ======= -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img style="display: block; margin: auto" src="~/images/dslide01.png" alt="ASP.NET" class="img-responsive" />
+            <!--
+                <div class="carousel-caption" role="option">
+                <p>
+                    Learn how to build ASP.NET apps that can run anywhere.
+                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525028&clcid=0x409">
+                        Learn More
+                    </a>
+                </p>
+            </div>
+            -->
+        </div>
+        <div class="item">
+            <img style="display: block; margin: auto" src="~/images/sd02.jpg" alt="Visual Studio" class="img-responsive" />
+        </div>
+        <div class="item">
+            <img style="display: block; margin: auto" src="~/images/sd03.png" alt="Microsoft Azure" class="img-responsive" />
+        </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<main id="main">
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-title">
+                <h2>Əsas kurslarımız</h2>
+            </div>
+            <div class="row portfolio-container">
+                <div class="col-lg-4 col-md-4 portfolio-item filter-app wow">
+                    <div class="course-block">
+                        <div class="heading">
+                            <img class="course-item" src="~/images/excellogo.jpg" />
+                            <div class="course-item course-title">
+                                <h3 style="font-weight: bold; display:block; margin: 10px auto">Excel + Power BI</h3>
+                            </div>
+                        </div>
+                        <div class="course-features">
+                            <table class="about-course">
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <td class="feature">Kursun tipi</td>
+                                    <td class="parametr">Virtual qrup</td>
+                                </tr>
+                                <tr>
+                                    <td class="feature">Səviyyə</td>
+                                    <td class="parametr">Advanced</td>
+                                </tr>
+                                <tr>
+                                    <td class="feature">Cəmi dərs</td>
+                                    <td class="parametr">36 saat</td>
+                                </tr>
+                                <tr>
+                                    <td class="feature">Kursun müddəti</td>
+                                    <td class="parametr">2 ay</td>
+                                </tr>
+                                <tr>
+                                    <td class="feature">Başlama tarixi</td>
+                                    <td class="parametr">28.04.2021</td>
+                                </tr>
+                                <tr>
+                                    <td class="feature" style="font-weight: bold">Qiymət</td>
+                                    <td class="parametr" style="font-weight: bold">45 AZN /ay</td>
+                                </tr>
+                            </table>
+                            <div class="buttons">
+                                <a asp-page="/Excel"><button class="further" style="margin-left: -15px"> Ətraflı</button></a>
+                                <a href="#toregister"><button class="further" style="margin-left: 30px" asp-page="Registration">Qeydiyyat</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 portfolio-item filter-web wow" data-wow-delay="0.1s">
+                    <div class="course-block">
+                        <div class="heading">
+                            <img class="course-item" src="~/images/sqlogo.png" />
+                            <div class="course-item course-title">
+                                <h3 style="font-weight: bold; display:block; margin: 10px auto">MS SQL</h3>
+                            </div>
+                        </div>
+                        <div class="course-features">
+                            <table class="about-course">
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <td class="feature">Kursun tipi</td>
+                                    <td class="parametr">Virtual qrup</td>
+                                </tr>
+                                <tr>
+                                    <td class="feature">Səviyyə</td>
+                                    <td class="parametr">Advanced</td>
+                                </tr>
+                                <tr>
+                                    <td class="feature">Cəmi dərs</td>
+                                    <td class="parametr">52 saat</td>
+                                </tr>
+                                <tr>
+                                    <td class="feature">Kursun müddəti</td>
+                                    <td class="parametr">3 ay</td>
+                                </tr>
+                                <tr>
+                                    <td class="feature">Başlama tarixi</td>
+                                    <td class="parametr">10.04.2021</td>
+                                </tr>
+                                <tr>
+                                    <td class="feature" style="font-weight: bold">Qiymət</td>
+                                    <td class="parametr" style="font-weight: bold">88 AZN /ay</td>
+                                </tr>
+                            </table>
+                            <div class="buttons">
+                                <a asp-page="/SQL"><button class="further" style="margin-left: -15px"> Ətraflı</button></a>
+                                <a href="#toregister"><button class="further" style="margin-left: 30px" asp-page="Registration">Qeydiyyat</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 portfolio-item filter-app wow" data-wow-delay="0.2s">
+                    <div class="course-block">
+                        <div class="heading">
+                            <img class="course-item" src="~/images/pythonlogo.png" />
+                            <div class="course-item course-title">
+                                <h3 style="font-weight: bold; display:block; margin: 10px auto">Python</h3>
+                            </div>
+                        </div>
+                        <div class="course-features">
+                            <table class="about-course">
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <td class="feature">Kursun tipi</td>
+                                    <td class="parametr">Virtual qrup</td>
+                                </tr>
+                                <tr>
+                                    <td class="feature">Səviyyə</td>
+                                    <td class="parametr">Advanced</td>
+                                </tr>
+                                <tr>
+                                    <td class="feature">Cəmi dərs</td>
+                                    <td class="parametr">64 saat</td>
+                                </tr>
+                                <tr>
+                                    <td class="feature">Kursun müddəti</td>
+                                    <td class="parametr">4 ay</td>
+                                </tr>
+                                <tr>
+                                    <td class="feature">Başlama tarixi</td>
+                                    <td class="parametr">01.05.2021</td>
+                                </tr>
+                                <tr>
+                                    <td class="feature" style="font-weight: bold">Qiymət</td>
+                                    <td class="parametr" style="font-weight: bold">99 AZN /ay</td>
+                                </tr>
+                            </table>
+                            <div class="buttons">
+                                <a asp-page="/Python"><button class="further" style="margin-left: -15px"> Ətraflı</button></a>
+                                <a href="#toregister"><button class="further" style="margin-left: 30px" asp-page="Registration">Qeydiyyat</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- End Portfolio Section -->
+    <section id="advantages" class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 ourpros">
+                <div class="main-pros">
+                    <h3>Canlı virtual kursun üstünlükləri</h3>
+                    <ul>
+                        <li>Yol vaxtına və xərcinə qənaət</li>
+                        <li>İnternet olan istənilən yerdə dərsə qoşulmaq imkanı</li>
+                        <li>Hər hansı səbəbdən dərsdə iştirak edə bilmədikdə müəllim tərəfindən müvafiq dərsin yazılmış videosunu əldə etmək imkanı</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 ourpros">
+                <div class="pros-image">
+                    <img class="proc-img" src="~/images/elearn.jpg" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="specialpro" class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 ourpros">
+                <div class="main-pros">
+                    <h3>“Data & Level”-ın xüsusi üstünlükləri</h3>
+                    <ul>
+                        <li>Xüsusi proqram vasitəsilə interaktiv canlı virtual dərslərin keçirilməsi</li>
+                        <li>Kursların daha ucuz olması</li>
+                        <li>Mövzuların yüksək səviyyədə öyrədilməsi</li>
+                        <li>Canlı və elektron sual-cavab dəstəyi</li>
+                        <li>Bütün Azərbaycan üçün yararlı olması</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 ourpros">
+                <div class="pros-image">
+                    <img class="proc-img" src="~/images/datacool.jpeg" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="forzoom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <p class="teachtech">
+                        Proqramımızın texniki dəstəyi tədris zamanı müəllimin kompüter ekranını görmək, dərs zamanı sual vermək və virtual qrup üzvləri ilə birgə onlayn interaktiv dərslərdə iştirak etməyə imkan yaradır.
+                        Artıq kurslara getməyin əhəmiyyəti itib. Müasir texnologiya sayəsində siz rahat evinizdən və ya internet olan istənilən yerdən istədiyiniz proqram üzrə canlı virtual kurslara qoşula bilərsiniz.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <h3 style="font-weight: bold">Zoom proqrami</h3>
+                    <p class="teachtech">
+                        Virtual dərslərin keçirilməsində Zoom proqramından istifadə olunur. Zoom sizə dərsə qoşularkən kompüterinizin daxili mikrofonunu yoxlayıb kontrol etməyə imkan yaradır.
+                        Zoom proqramı ilə canlı dərsə qoşulduqdan sonra həm müəllimin ekranını görə biləcək, həm onu eşidə biləcək, həm  də istənilən zaman sualınızı (səsli və ya çat vasitəsilə) verə biləcəksiniz. Eyni zamanda, dərs zamanı hər hansı probleminizi göstərmək istəyərkən müəllimin icazəsilə öz ekranınızı qrupda bölüşə bilərsiniz. Veb kamerası olanlar öz istəklərilə kameranı da qoşub özlərini təqdim edə biləcəklər.
+                        Zoom proqramının yüklənməsi və ondan istifadə qaydalarını öyrənmək üçün saytımızın ZOOM-qaydalar səhifəsinə və ya bu LİNK-ə müraciət edin.
+                    </p>
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <img class="zoomview" src="~/images/vclass.jpg" />
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <img class="zoomview" src="~/images/zoom.jpg" />
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <h3 style="font-weight: bold">İmtahan və Sertifikasiya </h3>
+                    <p class="teachtech">
+                        Data Level Virtual Akademiyası sizlərə müvafiq kursu bitirdikdən sonra onlayn imtahan verib sertifikat almağa imkan yaradır. Virtual Akademiyamızda hər kurs/proqram üzrə Ölkədaxili keçirilən Data Level səviyyə sertifikatı imtahanını verməklə səviyyə sertifikatı əldə edə biləcəksiniz.
+                        Bundan başqa, 2 və daha artıq kursu bitirənlər aşağıdakı ixtisas sertifikatlarından birinə yiyələnə biləcəklər:
+
+                    </p>
+                    <ul>
+                        <li style="font-weight: bold">Data Analitik</li>
+                        <li style="font-weight: bold">Data mühəndisliyi</li>
+                    </ul>
+                    <p class="teachtech">
+                        İmtahanların keçirilməsi qaydaları və sertifikatlar haqqında detallı saytımızın <a asp-page="/Exams">İMTAHANLAR</a> səhifəsindən tanış ola bilərsiniz.
+                    </p>
+                </div>
+            </div>
+            <br />
+            <a id="toregister"></a>
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <img class="zoomview" src="~/images/exam01.jpg" />
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <img class="zoomview" src="~/images/exam02.jpg" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======= Contact Section ======= -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="register-now">
+                        <h4 style="font-weight: bold">Kurslara erkən qeydiyyatdan keçməklə endirim əldə edin!</h4>
+                        <br />
+                        <div class="register-form">
+                            <form class="form" method="post">
+                                <div asp-validation-summary="All"></div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label asp-for="RegisterForm.FullName" class="col-md-3 right">Ad/Soyad:</label>
+                                            <div class="col-md-9">
+                                                <input asp-for="RegisterForm.FullName" class="regform" />
+                                                <span asp-validation-for="RegisterForm.FullName"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label asp-for="RegisterForm.Email" class="col-md-3 right">Email:</label>
+                                            <div class="col-md-9">
+                                                <input asp-for="RegisterForm.Email" class="regform" />
+                                                <span asp-validation-for="RegisterForm.Email"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label asp-for="RegisterForm.Phone" class="col-md-3 right">Telefon:</label>
+                                            <div class="col-md-9">
+                                                <input asp-for="RegisterForm.Phone" rows="6" class="regform" />
+                                                <span asp-validation-for="RegisterForm.Phone"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label asp-for="RegisterForm.Course" class="col-md-3 right">Kursu seçin:</label>
+                                            <div class="col-md-9">
+                                                <select name="mycourse" asp-for="RegisterForm.Course">
+                                                    <option value="Excel + Power BI">Excel + Power BI</option>
+                                                    <option value="MS SQL">MS SQL</option>
+                                                    <option value="Python">Python</option>
+                                                </select>
+                                                <span asp-validation-for="RegisterForm.Course"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <button class="regbtn" type="submit">Göndər</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                </div>
+            </div>
+        </div>
+    </section><!-- End Contact Section -->
+
+</main><!-- End #main -->
+
+@section Script{
+    <script type='text/javascript' data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({ c: '2b2eae51-1f27-4b01-88ed-2f7ae8e2f373', f: true }); done = true; } }; })();</script>
+}

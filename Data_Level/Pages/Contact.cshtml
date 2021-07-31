@@ -1,0 +1,69 @@
+﻿@page
+@model ContactModel
+@{
+    ViewData["Title"] = "Contact";
+}
+
+<section class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h3 style="margin-top:20px">Bizimlə əlaqə</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 col-md-6">
+            <form class="form form-horizontal" method="post">
+                <div asp-validation-summary="All"></div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label asp-for="Contact.FullName" class="col-md-3 right">Ad/Soyad:</label>
+                            <div class="col-md-9">
+                                <input asp-for="Contact.FullName" class="form-control" />
+                                <span asp-validation-for="Contact.FullName"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label asp-for="Contact.Email" class="col-md-3 right">Email:</label>
+                            <div class="col-md-9">
+                                <input asp-for="Contact.Email" class="form-control" />
+                                <span asp-validation-for="Contact.Email"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label asp-for="Contact.Message" class="col-md-3 right">Mesajınız:</label>
+                            <div class="col-md-9">
+                                <textarea asp-for="Contact.Message" rows="6" class="form-control"></textarea>
+                                <span asp-validation-for="Contact.Message"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <button class="regbtn" type="submit">Göndər</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-lg-6 col-md-6">
+            <h5>Burada kurslarla maraqlanmaq və ya hər hansı təklif/şikayətlərinizi bildirə bilərsiniz. Mövcud tələbələr isə dərs haqqında sualları buradan verməməlidir. Həmin məqsəd üçün müvafiq tələbə müəllimi ilə Zoom proqramı və ya elektron poçt  vasitəsilə əlaqə saxlayacaq.</h5>
+            <br />
+            <h4>Ünvan və Əlaqə</h4>
+            <ul>
+                <li>AF Business House/</li>
+                <li>(012) 579 38 74</li>
+                <li>contact@datalevel.pro</li>
+            </ul>
+        </div>
+    </div>
+    
+</section>
